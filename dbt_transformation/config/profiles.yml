@@ -9,6 +9,7 @@ dbt_transformation:
       method: service-account
       priority: interactive
       project: "{{ env_var('DBT_BIGQUERY_PROJECT', '') }}"
+      log-path: "{{ env_var('DBT_LOG_PATH', '') }}"
       threads: 1
       type: bigquery
   target: dev

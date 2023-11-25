@@ -1,0 +1,12 @@
+Initiate the dbt Project
+
+1. Create environment variables:
+	export DBT_BIGQUERY_PROJECT=big-star-collectibles-405917
+	export DBT_BIGQUERY_LOCATION=US
+	export DBT_BIGQUERY_DATASET=transformed_data
+	export DBT_BIGQUERY_KEYFILE_PATH=/mnt/d/ProgrammingData/end-to-end-data-engineering-project-4413618/dbt_key.json
+    export DBT_PROFILES_DIR=/mnt/d/ProgrammingData/end-to-end-data-engineering-project-4413618/dbt_transformation/config
+
+2. Verify connection:
+	cd dbt_transformation
+	dbt debug
